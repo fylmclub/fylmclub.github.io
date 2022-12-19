@@ -248,6 +248,9 @@ footer .icon{
 }
 
 @media only screen and (max-width: 800px) {
+    .actions a{
+        display:none;
+    }
     .primary-button, .secondary-button{
         font-size:14px;
         width:100%;
