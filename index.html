@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FylmClub ❋ Creator Corner</title>
+    <title>FylmClub | Coming Soon</title>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -33,78 +33,35 @@
 </head>
 <body>
 
-    <nav>
-        <div class="logo">
-            <img src="/assets/icons/logo.svg" alt="FylmClub Logo">
+    <div id="cards">
+        <div class="card">
+            <div class="logo">
+                <img src="/logo.svg" alt="FylmClub Logo Coming Soon">
+            </div>
+        
+            <!-- <a href="https://bit.ly/3v2SWb3" class="primary-button submit">Submit your film</a> -->
+            <div class="social-media">
+                <!-- <a href="https://www.instagram.com/fylmclub/"><i class="ph-instagram-logo"></i></a>
+                <a href="https://www.tiktok.com/@fylmclub"><i class="ph-tiktok-logo"></i></a> -->
+                <!-- Tiktok @FylmClub -->
+            </div>
         </div>
-        <div class="actions">
-            <a href="http://bit.ly/3WfWRwV" class="secondary-button">Join closed-beta</a>
-        </div>
-    </nav>
-
-    <div class="hero">
-        <div class="hero-container max-width">
-            <h1>The streaming platform built for student & indie filmmakers</h1>
-            <a href="http://bit.ly/3WfWRwV" class="primary-button"> 
-                <img src="/assets/icons/iconlogo.png" alt="FylmClub Icon">
-                Join closed-beta</a>
-        </div>
-    </div>
-    <div class="main-image">
-        <div class="main-image-container">
-            <img src="/assets/images/main-img.png" alt="FylmClub Cover Image">
-        </div>
-    </div>
-    <div class="benefits">
-        <div class="benefits-container max-width">
-            <div class="benefit-box">
-                <div class="benefit-box-icon"><i class="ph-globe-hemisphere-east"></i></div>
-                <div class="benefit-box-text">Reach a Global Audience</div>
-            </div>
-            <div class="benefit-box">
-                <div class="benefit-box-icon"><i class="ph-megaphone"></i></div>
-                <div class="benefit-box-text">We do all the marketing for you</div>
-            </div>
-            <div class="benefit-box">
-                <div class="benefit-box-icon"><i class="ph-youtube-logo"></i></div>
-                <div class="benefit-box-text">Hosted on YouTube</div>
-            </div>
-            <div class="benefit-box">
-                <div class="benefit-box-icon"><i class="ph-chart-line-up"></i></div>
-                <div class="benefit-box-text">Grow your presence</div>
-            </div>
-            <div class="benefit-box">
-                <div class="benefit-box-icon"><i class="ph-film-slate"></i></div>
-                <div class="benefit-box-text">Built for indie filmmakers</div>
-            </div>
-            <div class="benefit-box">
-                <div class="benefit-box-icon"><i class="ph-share-network"></i></div>
-                <div class="benefit-box-text">Community help & network</div>
-            </div>
-            <div class="benefit-box">
-                <div class="benefit-box-icon"><i class="ph-lifebuoy"></i></div>
-                <div class="benefit-box-text">Priority Support</div>
-            </div>
-            <div class="benefit-box">
-                <div class="benefit-box-icon"><i class="ph-trophy"></i></div>
-                <div class="benefit-box-text">Get the recognition</div>
-            </div>
-
-
-        </div>
-
-        <a href="http://bit.ly/3WfWRwV" class="primary-button"> <img src="/assets/icons/iconlogo.png" alt="FylmClub Icon">Join closed-beta</a>
+    
     </div>
 
-    <footer>
-        <div class="icon"><i class="ph-heart"></i></div>
-        <p>Made by creatives for creatives</p>
-        <h6>© FylmClub. All Rights Reserved.</h6>
-        <div class="social-media">
-            <a href="https://www.instagram.com/fylmclub/"><i class="ph-instagram-logo"></i></a>
-            <a href="https://www.tiktok.com/@fylmclub"><i class="ph-tiktok-logo"></i></a>
-        </div>
-    </footer>
 
+
+    <script>
+        document.getElementById("cards").onmousemove = e => {
+  for(const card of document.getElementsByClassName("card")) {
+    const rect = card.getBoundingClientRect(),
+          x = e.clientX - rect.left,
+          y = e.clientY - rect.top;
+
+    card.style.setProperty("--mouse-x", `${x}px`);
+    card.style.setProperty("--mouse-y", `${y}px`);
+  };
+}
+    </script>
 </body>
 </html>
